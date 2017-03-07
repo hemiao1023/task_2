@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>两个DIV并排</title>
+    <style>
+        *{font-size: 20px; font-family: "Times New Roman"}
+        .div-a{ float:left;width:29%;padding-right: 5px;margin-top: 10px}
+        .div-b{ float:left;width:69%;padding-left: 5px;margin-top: 10px}
+        .lab{float: right}
+        .ta{width: 60%}
+        .h{border-left: 5px solid #dcdcdc; padding-left: 10px; font-size: 30px;height: 60px; padding-top: 10px}
+        .btn{color: #ffffff; background-color: #0000ff; border-radius: 20px; width: 100%;height: 50px; margin-top: 20px}
+        .container{border: 50px solid #dcdcdc; padding: 50px}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="h">这里以后是一个侧栏，这是侧栏标题</h1>
+    <div>
+        <div class="div-a"><label class="lab">请输入邮箱地址</label></div>
+        <div class="div-b">
+            <input class="in" placeholder="这是一个文本输入框">
+            <p>邮箱地址请按要求格式输入</p>
+        </div>
+        <div class="div-a"><label class="lab">请输入密码</label></div>
+        <div class="div-b"><input class="in" type="password"></div>
+        <div class="div-a"><label class="lab">请重复输入密码</label></div>
+        <div class="div-b">
+            <input class="in" type="password">
+            <p>密码请为6-16位英文数字</p>
+        </div>
+        <br>
+        <div class="div-a"><label class="lab">性别</label></div>
+        <div class="div-b">
+            <input type="radio" checked>男
+            <input type="radio">女
+        </div>
+        <div class="div-a"><label class="lab">城市</label></div>
+        <div class="div-b">
+            <select>
+                <option aria-checked="true">北京</option>
+                <option>上海</option>
+            </select>
+        </div>
+        <div class="div-a"><label class="lab">爱好</label></div>
+        <div class="div-b">
+            <input type="checkbox">运动
+            <input type="checkbox">艺术
+            <input type="checkbox">科学
+        </div>
+        <div class="div-a"><label class="lab">个人描述</label></div>
+        <div class="div-b">
+            <textarea class="ta" rows="5" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+        </div>
+    </div>
+    <button class="btn">确认提交</button>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
